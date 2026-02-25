@@ -25,19 +25,13 @@
     <groupId>com.sun.xml.messaging.saaj.samples</groupId>
     <artifactId>saaj-servlet</artifactId>
     <packaging>jar</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ Samples servlet</name>
-
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
 
     <dependencies>
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-            <version>5.0.0-M1</version>
+            <version>6.1.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

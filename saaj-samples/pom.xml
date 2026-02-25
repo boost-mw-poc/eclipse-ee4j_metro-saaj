@@ -23,15 +23,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.sun.xml.messaging.saaj</groupId>
     <artifactId>saaj-samples</artifactId>
     <packaging>pom</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ Samples</name>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
         <bundles.dir>${project.build.directory}/bundles</bundles.dir>
     </properties>
 
@@ -51,14 +47,12 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
                     <skip>true</skip>
@@ -81,9 +75,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-antrun-plugin</artifactId>
-                        <version>1.8</version>
                         <inherited>false</inherited>
                         <executions>
                             <execution>
@@ -129,9 +121,7 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-antrun-plugin</artifactId>
-                        <version>1.8</version>
                         <inherited>true</inherited>
                         <executions>
                             <execution>
@@ -171,7 +161,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
+                        <version>3.6.3</version>
                         <executions>
                             <execution>
                                 <id>bundle-test</id>
@@ -186,7 +176,6 @@
                             <workingDirectory>${project.build.directory}/bundle/${project.artifactId}</workingDirectory>
                             <arguments>
                                 <argument>install</argument>
-                                <argument>-Pstaging</argument>
                             </arguments>
                         </configuration>
                     </plugin>

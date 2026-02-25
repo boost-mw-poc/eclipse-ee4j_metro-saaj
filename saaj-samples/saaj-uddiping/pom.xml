@@ -26,12 +26,9 @@
     <groupId>com.sun.xml.messaging.saaj.samples</groupId>
     <artifactId>saaj-uddiping</artifactId>
     <packaging>jar</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ UDDI Ping sample</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
         <juddi-dir>${project.basedir}/juddi</juddi-dir>
     </properties>
 
@@ -46,7 +43,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
                     <execution>
@@ -66,9 +62,7 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
                 <executions>
                     <execution>
                         <id>copy</id>
@@ -101,8 +95,7 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <!-- Newer versions with asm 4.1 causes https://www.eclipse.org/lists/jetty-users/msg04281.html -->
-                <version>11.0.0-alpha0</version>
+                <version>11.0.26</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.geronimo.modules</groupId>

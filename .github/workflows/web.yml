@@ -63,8 +63,8 @@ jobs:
           echo FI version: $FI_VERSION
           echo Mimepull version: $MIMEPULL_VERSION
           echo Stax-ex version: $STAXEX_VERSION
-          echo mvn -B -U -C -V -Pstaging clean install -f docs/pom.xml -Dsaaj.version=$SAAJ_VERSION -Dxml.soap-api.version=$XML_SOAP_API_VERSION -Dxml.bind-api.version=$XML_BIND_API_VERSION -Dactivation-api.version=$ACTIVATION_API_VERSION -Dfastinfoset.version=$FI_VERSION -Dmimepull.version=$MIMEPULL_VERSION -Dstax-ex.version=$STAXEX_VERSION
-          mvn -B -U -C -V -Pstaging clean install -f docs/pom.xml -Dsaaj.version=$SAAJ_VERSION -Dxml.soap-api.version=$XML_SOAP_API_VERSION -Dxml.bind-api.version=$XML_BIND_API_VERSION -Dactivation-api.version=$ACTIVATION_API_VERSION -Dfastinfoset.version=$FI_VERSION -Dmimepull.version=$MIMEPULL_VERSION -Dstax-ex.version=$STAXEX_VERSION
+          echo mvn -B -U -C -V clean install -f docs/pom.xml -Dsaaj.version=$SAAJ_VERSION -Dxml.soap-api.version=$XML_SOAP_API_VERSION -Dxml.bind-api.version=$XML_BIND_API_VERSION -Dactivation-api.version=$ACTIVATION_API_VERSION -Dfastinfoset.version=$FI_VERSION -Dmimepull.version=$MIMEPULL_VERSION -Dstax-ex.version=$STAXEX_VERSION
+          mvn -B -U -C -V clean install -f docs/pom.xml -Dsaaj.version=$SAAJ_VERSION -Dxml.soap-api.version=$XML_SOAP_API_VERSION -Dxml.bind-api.version=$XML_BIND_API_VERSION -Dactivation-api.version=$ACTIVATION_API_VERSION -Dfastinfoset.version=$FI_VERSION -Dmimepull.version=$MIMEPULL_VERSION -Dstax-ex.version=$STAXEX_VERSION
           rm -rf ./www/api || true
           cp -Rfv docs/target/site/* ./www/
           cp -Rfv CONTRIBUTING.md ./www/
