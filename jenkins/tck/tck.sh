@@ -51,7 +51,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
 ' > 'ri-download/pom.xml'
 
 mvn -f ri-download/pom.xml \
-    -Pstaging -Psnapshots \
+    -Psnapshots \
     -DoutputDirectory="${WORKSPACE}/saaj" \
     org.apache.maven.plugins:maven-dependency-plugin:3.1.2:copy-dependencies
 
@@ -123,7 +123,7 @@ while [ "$count" -lt '60' -a ! -f ${CATALINA_HOME}/logs/catalina.*.log ]; do
 done
 echo ' done'
 
-# Wait for Tomcat to deploy all aplication and start up 
+# Wait for Tomcat to deploy all aplication and start up
 CATALINA_LOG="${CATALINA_HOME}/logs/catalina.*.log"
 CATALINA_LOG_FIFO='/tmp/catalina.fifo'
 mkfifo ${CATALINA_LOG_FIFO}
@@ -151,7 +151,7 @@ export NAME=${SOAP_TCK_BUNDLE##*/}
 echo '***********************************************************************************' >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
 echo '***                        TCK bundle information                               ***' >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
 echo "*** Name:       ${NAME}                                     ***" >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
-echo "*** Download URL:	${SAAJ_TCK_BUNDLE} ***"  >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
+echo "*** Download URL:  ${SAAJ_TCK_BUNDLE} ***"  >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
 echo '*** Date and size: '`stat -c "date: %y, size(b): %s" ${WORKSPACE}/soap-tck.zip`'        ***'>> ${WORKSPACE}/${SUMMARY_FILE_NAME}
 echo "*** SHA256SUM: "`sha256sum ${WORKSPACE}/soap-tck.zip | awk '{print $1}'`' ***' >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
 echo '***                                                                             ***' >> ${WORKSPACE}/${SUMMARY_FILE_NAME}
