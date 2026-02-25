@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2026 Contributors to the Eclipse Foundation.
  * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
@@ -10,11 +11,12 @@
 
 package mime.custom;
 
-import java.awt.datatransfer.DataFlavor;
+import jakarta.activation.ActivationDataFlavor;
+import jakarta.activation.DataContentHandler;
+import jakarta.activation.DataSource;
+
 import java.io.IOException;
 import java.io.OutputStream;
-
-import jakarta.activation.*;
 
 /**
  * DataContentHandler for Content-Type : custom/mailcap
