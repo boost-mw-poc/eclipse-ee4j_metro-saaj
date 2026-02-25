@@ -95,8 +95,7 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <!-- Newer versions with asm 4.1 causes https://www.eclipse.org/lists/jetty-users/msg04281.html -->
-                <version>11.0.0-alpha0</version>
+                <version>11.0.26</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.geronimo.modules</groupId>

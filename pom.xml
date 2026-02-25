@@ -96,10 +96,10 @@
         <warn.limit>150</warn.limit>
         <jdoc.doclint>-missing</jdoc.doclint>
 
-        <activation-api.version>2.1.3</activation-api.version>
-        <angus-activation.version>2.0.2</angus-activation.version>
+        <activation-api.version>2.1.4</activation-api.version>
+        <angus-activation.version>2.0.3</angus-activation.version>
 
-        <xml.bind-api.version>4.0.2</xml.bind-api.version>
+        <xml.bind-api.version>4.0.5</xml.bind-api.version>
         <xml.soap-api.version>3.0.2</xml.soap-api.version>
 
         <fastinfoset.version>2.1.1</fastinfoset.version>
@@ -204,7 +204,7 @@ Copyright &#169; 2018, ${current.year} Eclipse Foundation. All rights reserved.]
                 </plugin>
                 <plugin>
                     <artifactId>maven-antrun-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
