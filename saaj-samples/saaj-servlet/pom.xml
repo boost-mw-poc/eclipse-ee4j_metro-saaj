@@ -27,11 +27,6 @@
     <packaging>jar</packaging>
     <name>SAAJ Samples servlet</name>
 
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>jakarta.servlet</groupId>

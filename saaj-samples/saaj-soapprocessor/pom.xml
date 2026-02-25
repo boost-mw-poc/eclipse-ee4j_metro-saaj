@@ -26,11 +26,6 @@
     <packaging>jar</packaging>
     <name>SAAJ SOAPProcessor sample</name>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>jakarta.servlet</groupId>

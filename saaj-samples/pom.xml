@@ -23,15 +23,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.sun.xml.messaging.saaj</groupId>
     <artifactId>saaj-samples</artifactId>
     <packaging>pom</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ Samples</name>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
         <bundles.dir>${project.build.directory}/bundles</bundles.dir>
     </properties>
 

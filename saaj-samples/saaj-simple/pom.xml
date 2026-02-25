@@ -24,13 +24,7 @@
     <groupId>com.sun.xml.messaging.saaj.samples</groupId>
     <artifactId>saaj-simple</artifactId>
     <packaging>war</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ Simple sample webapp</name>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
 
     <dependencies>
         <dependency>

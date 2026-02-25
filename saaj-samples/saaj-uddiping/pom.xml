@@ -29,8 +29,6 @@
     <name>SAAJ UDDI Ping sample</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
         <juddi-dir>${project.basedir}/juddi</juddi-dir>
     </properties>
 
