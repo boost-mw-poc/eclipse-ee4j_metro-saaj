@@ -25,7 +25,6 @@
     <groupId>com.sun.xml.messaging.saaj.samples</groupId>
     <artifactId>saaj-servlet</artifactId>
     <packaging>jar</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ Samples servlet</name>
 
     <properties>

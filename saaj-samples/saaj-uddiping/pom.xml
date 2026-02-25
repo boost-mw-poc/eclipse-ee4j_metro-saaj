@@ -26,7 +26,6 @@
     <groupId>com.sun.xml.messaging.saaj.samples</groupId>
     <artifactId>saaj-uddiping</artifactId>
     <packaging>jar</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ UDDI Ping sample</name>
 
     <properties>
@@ -68,7 +67,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
                 <executions>
                     <execution>
                         <id>copy</id>

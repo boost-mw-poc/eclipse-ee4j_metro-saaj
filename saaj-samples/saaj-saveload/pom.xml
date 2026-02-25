@@ -25,7 +25,6 @@
     <groupId>com.sun.xml.messaging.saaj.samples</groupId>
     <artifactId>saaj-saveload</artifactId>
     <packaging>jar</packaging>
-    <version>3.0.5-SNAPSHOT</version>
     <name>SAAJ Save and load sample</name>
 
     <properties>
@@ -37,7 +36,6 @@
         <dependency>
             <groupId>jakarta.activation</groupId>
             <artifactId>jakarta.activation-api</artifactId>
-            <version>2.0.0-RC2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -63,7 +61,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M3</version>
                 <configuration>
                     <systemPropertyVariables>
                         <buildDirectory>${project.build.directory}</buildDirectory>
